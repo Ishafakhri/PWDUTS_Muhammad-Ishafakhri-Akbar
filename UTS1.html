@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+        .header {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            max-width: 500px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .title-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 80px;
+            margin: 20px;
+        }
+        form {
+            text-align: left;
+        }
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .form-group label{
+            width: 150px;
+        }
+        input, select, textarea {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .gender-group {
+            display: flex;
+            justify-content: start;
+            gap: 20px;
+        }
+        input[type="radio"] {
+            width: auto;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            display: block;
+            margin: 20px auto 0 auto;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <marquee class="header">Selamat Datang di Formulir Pendaftaran! Harap isi data dengan lengkap dan benar.</marquee>
+        <div class="title-container">
+            <img src="./logo.jpeg" alt="Logo" class="logo">
+            <h2>Formulir Pendaftaran</h2>
+            <img src="./logo.jpeg" alt="Logo" class="logo">
+        </div>
+        <form action="#" class="form-container">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telepon">Nomor Telepon:</label>
+                <input type="tel" id="telepon" name="telepon" required>
+            </div>
+            <div class="form-group">
+                <label for="tanggal">Tanggal Lahir:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div class="gender-group">
+                    <label><input type="radio" name="gender" value="laki-laki" required> Laki-laki</label>
+                    <label><input type="radio" name="gender" value="perempuan" required> Perempuan</label>
+                </div>
+            </div>
+
+            <label for="prodi">Program Studi:</label>
+            <select id="prodi" name="prodi">
+                <option value="teknik-informatika">Teknik Informatika</option>
+                <option value="sistem-informasi">Sistem Informasi</option>
+                <option value="fisika">Fisika</option>
+            </select>
+
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4"></textarea>
+
+            <button type="submit" class="submit-btn">Kirim</button>
+        </form>
+    </div>
+</body>
+</html>

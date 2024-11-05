@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jadwal Mata Pelajaran Siswa</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-size: 16px;
+    }
+    table, th, td {
+        border: 5px solid black;
+    }
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+    table caption {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    /* Column colors */
+    .col-nama-siswa {
+        background-color: #f9cccc;
+    }
+    .col-mata-pelajaran {
+        background-color: #ccf2cc;
+    }
+    .col-hari {
+        background-color: #d3d3f9;
+    }
+    .col-jam {
+        background-color: #ffffcc;
+    }
+</style>
+</head>
+<body>
+
+<table>
+    <caption>Jadwal Mata Pelajaran Siswa</caption>
+    <tr>
+        <th class="col-nama-siswa" rowspan="2">Nama Siswa</th>
+        <th class="col-mata-pelajaran" rowspan="2">Mata Pelajaran</th>
+        <th class="col-hari" colspan="2">Jadwal</th>
+    </tr>
+    <tr>
+        <th class="col-hari">Hari</th>
+        <th class="col-jam">Jam</th>
+    </tr>
+    <tr>
+        <td class="col-nama-siswa" rowspan="2">Ahmad</td>
+        <td class="col-mata-pelajaran">Matematika</td>
+        <td class="col-hari">Senin</td>
+        <td class="col-jam">08:00 - 09:30</td>
+    </tr>
+    <tr>
+        <td class="col-mata-pelajaran">Bahasa Inggris</td>
+        <td class="col-hari">Selasa</td>
+        <td class="col-jam">10:00 - 11:30</td>
+    </tr>
+    <tr>
+        <td class="col-nama-siswa">Budi</td>
+        <td class="col-mata-pelajaran">Fisika</td>
+        <td class="col-hari">Rabu</td>
+        <td class="col-jam">09:00 - 10:30</td>
+    </tr>
+</table>
+
+</body>
+</html>
